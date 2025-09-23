@@ -1,0 +1,14 @@
+// Encabezado
+POST HTTP/1.1
+Accept-Language: fr, de
+If-MOdified-Since: Fri, 10 Dec 2004 11:22:13 GMT
+Host: api.taskmanager.com
+Content-TYpe: application/json
+Authorization: application/json
+
+// Cuerpo o Body
+{
+    "title": "Complete the project",
+    "description": "Finish the REST API project by Friday",
+    "dueDate": "2023-11-10"
+}
