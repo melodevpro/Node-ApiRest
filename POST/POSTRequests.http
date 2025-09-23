@@ -1,0 +1,21 @@
+# Uso basico de Post
+POST application/articles HTTP/1.1
+Host: example.com
+Content-Type: application/json
+Authorization: Bearer your-token-here
+
+{
+    "title": "Introduction to Rest APIs",
+    "student": "Melo Duarte",
+    "content": "REST is short for Representational State Transfer..."
+}
+
+# Acciones que no sean recursos
+POST /api/proccess-data HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{
+    "data": ["Raw data to process..."]
+}
+
