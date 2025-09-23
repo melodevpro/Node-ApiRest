@@ -1,0 +1,49 @@
+// SOlicitar un recurso con GET 
+GET /api/recursos/456 HTTP/1.1
+Host: ejemplo.com
+Accept: application/JSON
+
+// Enviar datos al servidor para crear un nuevo recurso con POST
+POST /api/recursos HTTP/1.1
+Host: ejemplo.com
+Content-Type: application/json
+Authorization: Bearer token_de_acceso
+{
+    "title": "Nuevo recurso",
+    "description": "Contenido del nuevo recurso",
+    "author": "Autor del recurso"
+}
+
+// Enviar datos al servidor para actualizar un recurso existete con PUT
+PUT /api/recursos/456 HTTP/1.1
+Host: ejemplo.com
+Content-Type: application/json
+Authorization: Bearer token_de_acceso
+{
+    "title": "Recurso actualizado",
+    "description": "Contenido actualizado",
+    "author": "Autor actualizado"
+}
+
+// Eliminar un recurso con DELETE
+DELETE /api/recursos/456 HTTP/1.1
+Host: ejemplo.com
+Authorization: Bearer token_de_acceso
+
+// Obtener los medatos de un recurso con HEAD
+HEAD /api/recursos/456 HTTP/1.1
+Host: ejemplo.com
+Accept: application/json
+
+// Obtener los metodos de comunicacion soportados por un recurso con OPTIONS
+OPTIONS /api/recursos/456 HTTP/1.1
+Host: ejemplo.com
+
+// Aplicar modificaciones parciales a un recurso con PATH
+PATH /api/recursos/456 HTTP/1.1
+Content-Type: application/json
+Autorization: Bearer token_de_acceso
+{
+    "description": "Nueva descripcion parcial del recurso"
+}
+

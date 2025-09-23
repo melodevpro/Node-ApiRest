@@ -1,0 +1,33 @@
+// Crear un nuevo usuario
+POST http://www.ejemploapi.com/users
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "5Xt2D@example.com",
+    "password": "password123"
+}
+
+// Leer informacion de un usuario existente
+GET http://www.ejemploapi.com/users/:userId
+
+// Actualizar informacion de un usuario existente
+PUT http://www.ejemploapi.com/users/:userId
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "5Xt2D@example.com",
+    "password": "newpassword123"
+}
+
+// Actualizar informacion  de un usuario existente con PATCH
+PATCH http://www.ejemploapi.com/users/:userId
+Content-Type: application/json
+
+{
+    "password": "newpassword123"
+}
+
+// Eliminar un usuario existente
+DELETE http://www.ejemploapi.com/users/:userId
