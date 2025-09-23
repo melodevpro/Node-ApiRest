@@ -1,0 +1,26 @@
+// Obtener una lista de todos los productos del servidor
+
+GET /api/products HTTP/1.1
+Host: api.taskmanager.com
+
+// Respuesta del servidor
+HTTP/1.1 200 OK
+Content-Type: application/json
+[
+    { "id": 1, "name": "Product A", "price": 10.99 },
+    { "id": 2, "name": "Product B", "price": 19.99 },
+    { "id": 3, "name": "Product C", "price": 5.99 }
+]
+
+// Obtener un producto especifico
+GET /api/products/10 HTTP/1.1
+Host: api.taskmanager.com
+
+// Parametros de consulta GET
+GET api/products?type=electronics&price_lt=1000 HTTP/1.1
+Host: api.taskmanager.com
+
+// Encabezado GET con metadatos
+Host: /api/user/profile HTTP/1.1
+Authorizacion: Bearer ypur-access-token
+Accept: application/json

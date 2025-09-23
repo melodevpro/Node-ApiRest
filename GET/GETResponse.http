@@ -1,0 +1,24 @@
+// Respuesta exitosa con lista de productos en JSON
+HTTP/1.1 200 OK
+Content-Type: application/JSON
+[
+    {
+        "id": 10,
+        "name": "Latop",
+        "type": "electronics",
+        "price": 1000
+    },
+    {
+        "id": 11,
+        "name": "Tablet",
+        "type": "electronics",
+        "price": 500
+    },
+    {
+        "id": 12,
+        "name": "Smartphone",
+        "type": "electronics",
+        "price": 800
+    }
+    // ... mas productos
+]
