@@ -1,0 +1,26 @@
+// Base64
+Authorization: Basic YWxhZGRpbjpvcGVuIHNlc2FtZQ==
+
+//Digest
+Authorization: Digest realm="ejemplo.com", qop="auth", nonce="123456", opaque="abcdefg", algorithm=MD5
+
+//Token
+Authorization: Bearer <token>
+
+//OAuth
+Authorization: Bearer <token>
+
+//SAML
+Authorization: SAML <token>
+
+//WS-Security
+Authorization: WS-Security <token>
+
+//API Key
+X-API-Key: <token>
+
+//JWT
+Authorization: Bearer <token></token>
+
+//OAuth 2.0 Bearer</token>
+
