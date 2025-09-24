@@ -1,0 +1,13 @@
+HTTP/1.1 200 OK 
+Content-Type: application/json
+{
+    "message": "Tarea actualizada correctamente",
+    "task": {
+        "id": 1,
+        "primerNombre": "Melo",
+        "apellido": "Duarte",
+        "edad": 36,
+        "email": "melo@me.com",
+        "password": "12345"
+    }
+}

@@ -2,21 +2,19 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
-let articles = []; // Este array simulara nuestra base de datos.
+let users = []; // Este array simulara nuestra base de datos.
 
-app.post('/api/articles', (req, res) => {
-    // Crear un nuevo articulo con la informacion recibida en el cuerpo de la solicitud
-    const newArticle = {
-        id: articles.length + 1,
-        title: req.body.title,
-        author: req.body.author,
-        content: req.body.content,
-        createAt: new Date().toISOString()
+//POST crear un nuevo usuario:
+app.post('/api/users', (req, res) => {
+    const newUser = {
+        id: users.length + 1,
+        primerNombre: req.body.primerNombre,
+        apellido: req.body.apellidos,
+        edad: req.body.edad,
+        email: req.body.email
     };
-    articles.push(newArticle);
-
-    // Enviar una respuesta con el articulo creado y el codigo de estado 201
-    res.status(201).location('/api/articles/${newArticle.id}').send(newArticle);
+    users.push(newUser);
+    res.status(201).json(newUser);
 });
 
 const port = 3000;

@@ -1,0 +1,13 @@
+PUT /api/users/4 HTTP/1.1
+Host: localhost:3000
+Content-Type: application/json
+Authorization: Baerer your-acces-token-Headers
+
+{
+    "primerNombre": "Melo",
+    "apellido": "Duarte",
+    "edad": 36,
+    "email": "melo@me.com",
+    "password": "12345"
+}
+
