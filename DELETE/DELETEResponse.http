@@ -1,0 +1,24 @@
+const { application } = require("express")
+
+//Respuesta sin contenido
+HTTP/1.1 200 OK 
+Content-Type: application/json
+
+{
+    "message": "User deleted successfully."
+}
+
+//Respuesta con contenido
+HTTP/1.1 200 OK 
+Content-Type: application/json
+
+{
+    "message": "User deleted successfully.",
+    "user": {
+        "id": 1,
+        "primerNombre": "Melo",
+        "apellido": "Duarte",
+        "edad": 36
+        "email": "melo@me.com"
+    }
+}
