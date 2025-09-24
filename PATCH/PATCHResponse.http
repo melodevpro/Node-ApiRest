@@ -1,0 +1,12 @@
+const { json } = require("express")
+
+HTTP/1.1 200 OK 
+Content-Type: application/json
+
+{
+    "id": "4",
+    primerNombre: 'Valentina',
+    apellido: 'Duarte',
+    edad: 16,
+    email: 'valentina@me.com'
+}
